@@ -1,0 +1,13 @@
+
+# Dependencies
+node_modules/
+
+# Environment secrets
+backend/.env
+backend/.env.*
+
+# Build files
+frontend/dist/
+
+# Logs
+*.log

@@ -1,0 +1,202 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+  color: #202b3c;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  width: min(1100px, 92%);
+  margin: 35px auto;
+}
+
+.page-header {
+  margin-bottom: 25px;
+}
+
+.eyebrow {
+  color: #5265d8;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.page-header h1 {
+  margin: 8px 0;
+  font-size: clamp(28px, 5vw, 38px);
+}
+
+.page-header p:last-child {
+  color: #687386;
+}
+
+.summary {
+  background: #293d80;
+  color: white;
+  padding: 24px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+}
+
+.summary p {
+  margin: 0;
+}
+
+.summary h2 {
+  font-size: clamp(28px, 5vw, 36px);
+  margin: 12px 0;
+}
+
+.summary span {
+  color: #d8e0ff;
+  font-size: 14px;
+}
+
+.panel {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 18px rgba(30, 45, 80, 0.06);
+}
+
+.panel h2 {
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d7dce5;
+  border-radius: 8px;
+  background: white;
+  color: #202b3c;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #8795f2;
+  border-color: #5265d8;
+}
+
+.form-actions,
+.table-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 16px;
+  background: #5265d8;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.88;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.secondary-button {
+  background: #e7eaf1;
+  color: #202b3c;
+}
+
+.edit-button {
+  background: #e6edff;
+  color: #293d80;
+  padding: 8px 11px;
+}
+
+.delete-button {
+  background: #ffe8e8;
+  color: #a52525;
+  padding: 8px 11px;
+}
+
+.message {
+  margin-bottom: 0;
+  color: #293d80;
+  overflow-wrap: anywhere;
+}
+
+.empty-state {
+  color: #687386;
+  padding: 10px 0;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #edf0f5;
+  white-space: nowrap;
+}
+
+th {
+  background: #f8f9fc;
+  font-size: 13px;
+  color: #59657a;
+}
+
+td {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 20px auto;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  th,
+  td {
+    padding: 11px 9px;
+  }
+}
